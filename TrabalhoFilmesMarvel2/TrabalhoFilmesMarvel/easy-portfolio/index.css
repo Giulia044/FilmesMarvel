@@ -1,0 +1,1040 @@
+
+body.MCU{
+    color: whitesmoke;
+    background-color: red;
+    font-family: Arial, sans-serif;
+    background-image:url('imagens/MarvelFundo.jpg'); 
+    background-size: contain;;
+    background-repeat: no-repeat; 
+    background-position: center; 
+    margin: 0; 
+    position: relative;
+    height: 120vh;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    }
+  
+
+
+body.MCU::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+    pointer-events: none; 
+}
+
+
+
+
+.MCU nav{
+    background-color: rgba(2, 2, 2, 0.8);
+    padding: 10px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5); 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.MCU nav ul {
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    gap: 20px;
+}
+
+.MCU nav ul li {
+    display: inline;
+}
+
+.MCU nav ul li a {
+    color: white; 
+    text-decoration: none; 
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 15px;
+    margin: 0 15px;
+}
+
+.MCU nav ul li a:hover {
+    background-color: red;
+    border-radius: 5px; 
+}
+
+.MCU ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 20px;
+}
+
+.MCU a {
+    color: white;
+    text-decoration: none;
+}
+
+.MCU h1,h2 {
+    position: absolute; 
+    top: 50px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    text-align: center;
+    color: whitesmoke; 
+    margin: 0;
+    border-color: black;
+  
+}
+
+
+.MCU h1 {
+    top: 35px; 
+    font-size: 5rem;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #FFFFFF;
+    text-transform: uppercase; 
+    z-index: 2;
+    animation: glow 1s infinite alternate;
+    text-shadow: 
+        0 0 5px #FF0000,  
+        0 0 10px #FF4500,  
+        0 0 20px #FF6347,  
+        0 0 30px #FF4500; 
+    
+    letter-spacing: 3px; 
+
+}
+
+.MCU h2 {
+    top: 115px; 
+    font-size: 1.6rem; 
+    color: #1f618d;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.8rem;
+    text-align: center;
+    color: goldenrod;
+    text-shadow: 7px 6px 0  black; 
+    font-family: 'Bebas Neue', sans-serif;
+    z-index: 2;
+}
+
+.MCU h3 {
+    text-align: center;
+    position: relative;
+    top: 23%;  
+    left: -0.2rem;
+    font-size: 30px;
+    z-index: 5;
+    font-family: 'Anton', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    opacity: 1;
+    background: linear-gradient(135deg, #D32F2F, #FFEB3B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.2px #212121;
+    text-shadow: 3px 3px 8px rgba(38, 50, 56, 0.4);
+    text-decoration: underline;
+    
+
+}
+
+.texto-MCU {
+    text-align: center;
+    position: relative;
+    top: 65%;
+    font-size: 25px;
+    font-family: 'Bebas Neue', sans-serif;
+    opacity: 1;
+    font-weight: bold;
+    z-index: 2;  
+    max-width: 800px;     
+    margin-left: auto;  
+    margin-right: auto;         
+    letter-spacing: 2px;   
+}
+
+
+
+.MCU footer {
+    background: black;
+    color: goldenrod;
+    text-align: center;
+    padding: 10px;
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 1rem;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.gif-imagem1 {
+    width: 250px;  
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    border-color: blue, 10%;
+    position: absolute;
+    top: 7%;
+    right: 75%;
+    left: 1%;
+    border-width: 5px;         
+    border-style: double;       
+    border-color: gold;
+}
+
+.gif-imagem2 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 49%;
+    right: 75%;
+    left: 9%;
+    border-width: 5px;         
+    border-style:double;       
+    border-color: gold;
+    transform: translate(-50%, -50%);
+
+}
+
+.gif-imagem3 {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 91%;
+    right: 50%;
+    border-width: 5px;         
+    border-style:double;       
+    border-color: gold;
+    transform: translate(-50%, -50%);
+
+}
+
+.gif-imagem4 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 20%;
+    right: 8%;
+    left: 91%;
+    border-width: 5px;         
+    border-style:double;       
+    border-color: gold;
+    transform: translate(-50%, -50%);
+
+}
+
+.gif-imagem5 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 79.8%;
+    right: 8%;
+    left: 91%;
+    border-width: 5px;         
+    border-style:double;       
+    border-color: gold;
+    transform: translate(-50%, -50%);
+
+}
+
+.gif-imagem6 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 79.8%;
+    right: 8%;
+    left: 91%;
+    border-width: 5px;         
+    border-style:double;       
+    border-color: gold;
+    transform: translate(-50%, -50%);
+
+}
+
+.gif-imagem7 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 79.8%;
+    left: 9%;
+    right: 50%;
+    border-width: 5px;         
+    border-style:double;       
+    border-color: gold;
+    transform: translate(-50%, -50%);
+
+}
+
+@media (max-width: 1366px) {
+    .MCU nav ul {
+        flex-wrap: wrap; /
+    }
+
+    .MCU h1 {
+        font-size: 3rem; 
+    }
+
+    .gif-imagem1, .gif-imagem2, .gif-imagem3 {
+        width: 150px; 
+        height: auto;
+    }
+}
+
+.MCU {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "main main"
+        "footer footer";
+    grid-template-rows: auto 1fr auto;
+    gap: 20px;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+
+
+
+/* página 2 */
+.pg2 {
+    font-family:'Bebas Neue', 'Anton', sans-serif;
+    background-color: #1c1c1e;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.pg2 .banner-superior {
+    width: 100%; 
+    height: 300px; 
+    background-image: url('imagens/4K-Marvel-Logo-HD-Desktop-Wallpaper-38017.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+    font-family: 'Anton', sans-serif; 
+    font-size: 2.5rem; 
+    position: relative; 
+}
+
+
+
+header {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100%;
+    text-align: center;
+}
+
+
+header h1 {
+    font-family: 'Bebas Neue', 'Anton', sans-serif; 
+    font-size: 6rem; 
+    color: #FFD700; 
+    text-shadow: 
+        2px 2px 8px rgba(0, 0, 0, 0.6), 
+        0 0 15px rgba(255, 215, 0, 1), 
+        0 0 25px rgba(255, 215, 0, 0.8), 
+        0 0 50px rgba(255, 215, 0, 0.4); 
+    animation: shineMarvel 1.5s infinite alternate; 
+    font-weight: bold;
+}
+
+
+@keyframes shineMarvel {
+    0% {
+        text-shadow: 
+            2px 2px 8px rgba(0, 0, 0, 0.6),
+            0 0 15px rgba(255, 215, 0, 1),
+            0 0 25px rgba(255, 215, 0, 0.8),
+            0 0 50px rgba(255, 215, 0, 0.4);
+    }
+    100% {
+        text-shadow: 
+            2px 2px 10px rgba(0, 0, 0, 0.6),
+            0 0 25px rgba(255, 215, 0, 1),
+            0 0 35px rgba(255, 215, 0, 0.8),
+            0 0 60px rgba(255, 215, 0, 0.5);
+    }
+}
+
+
+
+
+
+
+
+.pg2 .table {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    border: 2px solid #ff0000; 
+    background-color: #28282b; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+
+.pg2 .table__header {
+    background-color: #ff0000; 
+    color:#fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.pg2 .table__header th {
+    padding: 15px;
+    border: 1px solid #900000; 
+    font-size: 18px;
+}
+
+.pg2 .table__row {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.pg2 .table__row:nth-child(even) {
+    background-color: #333336;
+}
+.pg2 .table__row:nth-child(odd) {
+    background-color: #28282b; 
+}
+.pg2 .table__row:hover {
+    background-color: #ff4c4c;
+    cursor: pointer;
+}
+
+
+.pg2 .table__cell {
+    padding: 12px;
+    border: 1px solid #444;
+    font-size: 22px;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+.pg2 .button-marvel {
+    display: inline-block;
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin: 20px auto;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: 2px solid #900000;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.pg2 .button-marvel:hover {
+    background-color: #ff4c4c;
+    transform: translateY(-3px);
+}
+
+
+@media (max-width: 768px) {
+    .pg2 .table {
+        width: 100%;
+    }
+
+    .pg2 .table__cell {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .pg2 .table__header th {
+        font-size: 20px;
+    }
+
+    .pg2 .banner-superior {
+        height: 200px;
+        font-size: 1.5rem; 
+    }
+}
+
+
+
+.pg2 .button-voltar {
+    display: inline-block;
+    background-color: #ff0000; 
+    color: #ffffff;
+    padding: 10px 20px;
+    margin: 30px auto;
+    margin-left: 1%;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: 2px solid #900000;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    
+}
+
+.pg2 .button-voltar:hover {
+    background-color: #ff4c4c; 
+    transform: translateY(-3px); 
+}
+
+
+
+
+
+
+.pg3 {
+    font-family: 'Bebas Neue', 'Anton', sans-serif;
+    background-color: #1c1c1e;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+
+.pg3 .banner-sup {
+    width: 100%;
+    height: 350px;
+    background-image: url(imagens/avengers_endgame_4k_8k_2-2560x1440.jpg);
+    background-size: cover;
+    background-position: center top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-family: 'Anton', sans-serif;
+    font-size: 2.5rem;
+    position: relative;
+}
+
+
+.pg3 .banner-sup h1 {
+    font-size: 3.5rem;
+    text-shadow: 
+        2px 2px 8px rgba(0, 0, 0, 0.6),
+        0 0 15px rgba(255, 215, 0, 1),
+        0 0 25px rgba(255, 215, 0, 0.8),
+        0 0 50px rgba(255, 215, 0, 0.4);
+    font-weight: bold;
+    margin-top: 500px;
+    
+}
+
+/*lista de atores */
+.pg3 .elenco {
+    padding: 40px;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.pg3 .elenco h2 {
+    font-size: 4rem;
+    font-family: 'Anton', sans-serif;
+    color: #FFD700;
+    text-shadow: 
+    3px 3px 6px rgba(0, 0, 0, 0.8), 
+    0 0 15px rgba(255, 215, 0, 1), 
+    0 0 25px rgba(255, 215, 0, 0.7), 
+    0 0 50px rgba(255, 215, 0, 0.5);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    animation: shineMarvel 2s infinite alternate;
+    margin-bottom: 30px;
+    top: 55%;
+    position: absolute;
+}
+
+
+
+@keyframes shineMarvel {
+    0% {
+        text-shadow: 
+            3px 3px 6px rgba(0, 0, 0, 0.8),
+            0 0 15px rgba(255, 215, 0, 1),
+            0 0 25px rgba(255, 215, 0, 0.7),
+            0 0 50px rgba(255, 215, 0, 0.5);
+    }
+    100% {
+        text-shadow: 
+            3px 3px 8px rgba(0, 0, 0, 0.8),
+            0 0 20px rgba(255, 215, 0, 1),
+            0 0 35px rgba(255, 215, 0, 0.7),
+            0 0 60px rgba(255, 215, 0, 0.6);
+    }
+}
+
+
+
+.pg3 .lista-atores {
+    list-style-type: none;
+    padding: 0;
+}
+
+.pg3 .lista-atores li {
+    font-size: 1.8rem;
+    margin: 15px 0;
+    font-family: 'Anton', sans-serif;
+    padding: 10px;
+    color: #FFFFFF; 
+    text-align: center; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    position: relative;
+    transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+    border-bottom: 2px solid #B0B0B0;
+    z-index: 1;
+
+}
+
+
+.pg3 .lista-atores li:hover {
+    color: #ff4c4c; 
+    background-color: rgba(255, 0, 0, 0.1); 
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+    z-index: 2;
+}
+
+.pg3 .lista-atores li:focus {
+    outline: none; 
+    box-shadow: 0 0 15px rgba(255, 215, 0, 1);
+}
+
+
+.pg3 .lista-atores a {
+    color: #ff4c4c;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.pg3 .lista-atores a:hover {
+    color: #ff0000; 
+}
+
+
+@media (max-width: 768px) {
+    .pg3 .elenco h2 {
+        font-size: 2rem;
+    }
+
+    .pg3 .lista-atores li {
+        font-size: 1.2rem;
+    }
+}
+
+.pg3 .button-voltar {
+    display: inline-block;
+    background-color: #ff0000; 
+    color: #ffffff;
+    padding: 10px 20px;
+    margin: 30px auto;
+    margin-left: 1%;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: 2px solid #900000;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    
+}
+
+.pg3 .button-voltar:hover {
+    background-color: #ff4c4c; 
+    transform: translateY(-3px); 
+}
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.pg4 {
+    font-family: 'Bebas Neue';
+    background-color:#1c1c1e ;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+}
+
+
+.banner {
+    width: 100%;
+    height: 300px; 
+    background-image: url('imagens/4K-Marvel-Logo-HD-Desktop-Wallpaper-38017.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+    font-family: 'Bebas Neue', sans-serif; 
+    font-size: 2.5rem;
+    padding: 50px;
+    position: relative; 
+}
+
+h1 {  
+    font-size: 6rem;
+    color: #FFD700; 
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+    margin-bottom: 20px; 
+    padding-top: 0%;
+    font-family: 'Bebas Neue', 'Anton', sans-serif;
+    text-shadow: 
+        2px 2px 8px rgba(0, 0, 0, 0.6), 
+        0 0 15px rgba(255, 215, 0, 1), 
+        0 0 25px rgba(255, 215, 0, 0.8), 
+        0 0 50px rgba(255, 215, 0, 0.4); 
+    animation: shineMarvel 1.5s infinite alternate;
+    font-weight: bold;
+}
+
+
+@keyframes shineMarvel {
+    0% {
+        text-shadow: 
+            2px 2px 8px rgba(0, 0, 0, 0.6),
+            0 0 15px rgba(255, 215, 0, 1),
+            0 0 25px rgba(255, 215, 0, 0.8),
+            0 0 50px rgba(255, 215, 0, 0.4);
+    }
+    100% {
+        text-shadow: 
+            2px 2px 10px rgba(0, 0, 0, 0.6),
+            0 0 25px rgba(255, 215, 0, 1),
+            0 0 35px rgba(255, 215, 0, 0.8),
+            0 0 60px rgba(255, 215, 0, 0.5);
+    }
+}
+
+
+
+.main-content {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin: 20px auto;
+    gap: 20px; 
+    width: 100%; 
+    max-width: 1200px;
+}
+
+
+.mapBox{
+    position: relative; 
+    top: -30%; 
+    flex: 0 0 450px;
+    height: 450px;
+    width: 110%;
+    background: #fff;
+    border: 3px double #FFD700;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+    margin-top: -3px; 
+    margin-bottom: 20px;
+    
+    
+
+}
+
+.mapBox iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.pg4 footer {
+    background-color: #333;
+    color: #ccc;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    margin-top: auto;
+    
+}
+
+.video1 iframe, .video2 iframe {
+    width: 120%;
+    height: 350px;
+    border: none;
+}
+
+.video1 {
+    margin-top: 10px;
+    width: 100%;
+    height: 315px;
+    padding-top: 30px;
+    flex: 1;
+    max-width: 560px;
+}
+
+.video2 {
+    margin-top: 5px; 
+    width: 40%;
+    height: 315%;
+    padding-top: 10px;
+    flex: 1;
+}
+
+.pg4 .button-voltar {
+    display: inline-block;
+    background-color: #ff0000; 
+    color: #ffffff;
+    padding: 10px 20px;
+    margin: 30px auto;
+    margin-left: 4%;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: 'Bebas Neue', sans-serif;
+    border: 2px solid #900000;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    
+}
+
+.pg4 .button-voltar:hover {
+    background-color: #ff4c4c; 
+    transform: translateY(-3px); 
+}
+ 
+
+
+.form-container {
+    position: absolute; 
+    top: 450px; 
+    right: 20px; 
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px double #e62429; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(230, 36, 41, 0.8);
+    max-width: 300px;
+    color: #fff;
+    text-align: center;
+    z-index: 1000;
+    margin-top: 30px;
+}
+
+.form-container h2 {
+    color: #FFD700;
+    margin-bottom: 20px;
+    margin-top: -190px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 6px rgba(255, 0, 0, 0.7), 0 0 25px rgba(255, 0, 0, 0.7);
+    text-align: center;
+    font-weight: bolder;
+    letter-spacing: 1px;
+  
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #0066cc;
+    text-shadow: white;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+}
+
+.form-group input[type="submit"] {
+    background: #e62429;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.form-group input[type="submit"]:hover {
+    background: #ff474c;
+    transform: scale(1.05);
+}
+
+textarea::placeholder,
+input::placeholder {
+    color: #888;
+}
+
+button {
+    background-color: #ff6f61; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff4b3a; 
+    transform: scale(1.05); 
+}
+
+
+iframe {
+    transition: transform 0.5s ease;
+}
+
+iframe:hover {
+    transform: scale(1.05); 
+}
+
+
+@media (max-width: 768px) {
+    .form-container {
+        padding: 15px;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+.imagemsite {
+    position: absolute;
+    top: 60%; 
+    right: 83%; 
+    border-radius: 10%;
+    border-color: #1f618d;
+    transform: translateY(-50%);
+    width: 15%; 
+    height: auto;
+    z-index: 1; 
+}
+
+.siteoficial {
+    position: absolute;
+    top: 85%;  
+    right: 84%;  
+    transform: translateY(-50%);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    text-align: center;
+    
+}
+
+.siteoficial img {
+    width: 200px; 
+    height: auto; 
+    border-radius: 50%;  
+    border: 3px solid #FFD700;  
+    transition: transform 0.3s ease;  
+    z-index: 2;
+    
+}
+
+.siteoficial img:hover {
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.8);
+    z-index: 1;
+}
+
+
+
+.tooltip {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0;
+    pointer-events: none; 
+    transition: opacity 0.3s ease;
+}
+
+.link-marvel:hover .tooltip {
+    opacity: 4; 
+}
+
